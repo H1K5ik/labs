@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function zad1(){let a = Math.floor(Math.random() *3)+1;
+		let b = prompt('Угадай число от 1 до 3');
+		let s = Number(b);
+		if (a===s) {
+			alert('Гыгыгыгыгыгы угадал');
+
+		}
+		else{
+			alert('Не угадал, число = ' + a);
+		}
+	}
+zad1();
+	function zad2(){
+		let q = Math.floor(Math.random() *7)+1;
+		let w =Math.floor(Math.random() *7)+1;
+
+		if (q+w>=10) {
+			let i1 = true;
+			alert(i1 +' q = ' + q +' w = ' + w);
+		} 
+		else{
+			let i2 = false;
+			alert(i2 + ' q = ' + q +' w = ' + w);
+		}
+		
+	}
+	zad2();
+	function isEven(number) { return number % 2 === 0; }
+
+alert(isEven(prompt('Введите число')));
+	</script>
+</body>
+</html>

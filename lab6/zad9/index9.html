@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+<div class="bg">
+	
+	<div class="planet1"></div>
+	<div class="planet2"></div>
+	<div class="planet3"></div>
+	
+	<div class="superman"></div>
+	
+</div>
+<form name="form1">
+    <img id="pic1" class="asteroid" src="img/asteroid.png" alt="">
+    <img id="pic2" class="ufo" src="img/ufo.png" alt="">
+    <img id="pic3" class="spaceship" src="img/spaceship.png" alt="">
+    <br>
+    <input type="button" class="knopka" value="ПОЛЕТЕЛИ" onclick="changeImage()">
+</form>
+<script>function changeImage() {
+	var i = 1;
+	setTimeout(function () {
+		
+	i++; 
+	if (i < 100) {
+		changeImage()
+	}
+}, 500);
+    var temp = document.getElementById("pic1").src;
+    document.getElementById("pic1").src = document.getElementById("pic2").src;
+    document.getElementById("pic2").src = temp;
+    var temp1 = document.getElementById("pic2").src;
+    document.getElementById("pic2").src = document.getElementById("pic3").src;
+    document.getElementById("pic3").src = temp1;
+  
+}</script>	
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>ZADANIE 8</title>
+</head>
+<body>
+<h3>Пргресс-бар</h3>
+<progress id='main' value="0" max="100"></progress>
+<a id="am">0%</a>
+<DIV><button onclick="func()">Увеличить значение</button></DIV>
+	<script>
+		
+	function func(){
+		document.getElementById('main').value = document.getElementById('main').value +5;
+		
+		 am = Number(am) + 5;
+		 if (am === 100) {
+		 	document.getElementById("am").innerHTML = am + '%' + '   конец';
+		 }
+		 else{
+             
+
+		document.getElementById("am").innerHTML = am + '%';
+		}
+	}
+</script>
+</body>
+</html>

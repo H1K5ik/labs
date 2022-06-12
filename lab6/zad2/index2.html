@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>ZADANIE 2</title>
+	<style>
+		button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 16px;
+}
+.pr{
+	font-size: :16px;
+	color: blue;
+}
+</style>
+
+</head>
+<body>
+	<h2 class="pr">Заголовок с классом pr.</h2>
+	<p class="pr">Абзац с классом zzz.</p>
+	<p class="pr">Абзац с классом zzz.</p>
+	<p >Абзац без класса</p>
+	<button type="button" onclick="disableStylesheet()">ЖАМ</button>
+	<script >
+		function disableStylesheet() {
+
+		let  sheets = document.querySelectorAll('.pr');
+		for(let i = 0; i < sheets.length; i++){
+			sheets[i].textContent =i+1;
+	}
+}
+	</script>
+</body>
+</html>

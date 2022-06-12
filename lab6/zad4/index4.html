@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>ZADANIE 4</title>
+</head>
+<body>
+ <input id="num1">
+ <a>    +    </a>
+ <input id="num2">
+ <a> = </a>
+ <a id="result">?</a>
+ 	<br><br><button onclick="func()">Нажмите чтобы сложить</button>
+
+ 
+
+ <script>
+    function func(){
+          var num1 = Number(document.getElementById("num1").value);
+          var num2 = Number(document.getElementById("num2").value);
+          var result = num1 + num2;
+
+          document.getElementById("result").innerHTML = result;
+          }
+ </script>	
+</body>
+</html>
